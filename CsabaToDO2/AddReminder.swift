@@ -35,7 +35,7 @@ struct AddReminderView: View {
   }
     
   var body: some View {
-    NavigationStack {
+    NavigationView {
       Form {
           Section("Data"){
               TextField("Title", text: $reminder.title)
@@ -48,10 +48,10 @@ struct AddReminderView: View {
                   }
                   
               }.pickerStyle(MenuPickerStyle())
-                  .onChange(of: reminder.priority) { oldValue, newValue in
-                      print(oldValue)
-                      print(newValue)
-                  }
+//                  .onChange(of: reminder.priority) { oldValue, newValue in
+//                      print(oldValue)
+//                      print(newValue)
+//                  }
                   
           }
       }

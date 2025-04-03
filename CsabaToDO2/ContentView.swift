@@ -54,9 +54,4 @@ struct ContentView: View {
     }
 }
 
-#Preview {
-    NavigationStack {
-        ContentView()
-            .navigationTitle("Reminders")
-    }
-}
+
